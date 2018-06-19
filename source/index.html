@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Uchi.ru</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="content">
+		<div class="expression">
+			<span class="expression__number" id="number-a"></span>
+			<span class="expression__operator">+</span>
+			<span class="expression__number" id="number-b"></span>
+			<span class="expression__operator">=</span>
+			<form class="expression__form" id="expression__form">
+				<span class="expression__number" id="number-sum"></span>
+				<input class="expression__input" id="expression__input" type="text" maxlength="2" autocomplete="off">
+			</form>
+		</div>
+		<div class="visualisation">
+			<form class="visualisation__form" id="first-form">
+				<input class="visualisation__input" id="first-input" type="text" maxlength="1" autocomplete="off">
+				<p class="visualisation__text" id="first-text"></p>
+			</form>
+			<form class="visualisation__form" id="second-form">
+				<input class="visualisation__input" id="second-input" type="text" maxlength="1" autocomplete="off">
+				<p class="visualisation__text" id="second-text"></p>
+			</form>
+			<div class="visualisation__arrow" id="first-arrow">
+				<img src="img/arrow.png" alt="arrow" class="visualisation__arrow-img">
+			</div>
+			<div class="visualisation__arrow" id="second-arrow">
+				<img src="img/arrow.png" alt="arrow" class="visualisation__arrow-img">
+			</div>
+			<div class="visualisation__axis">
+				<img src="img/sprite.png" alt="axis" class="visualisation__axis-img" id="axis-img">
+			</div>
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
